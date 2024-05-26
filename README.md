@@ -62,24 +62,25 @@ Having two masks from DoG and thresholding, we combine them together using an AN
 ## Results
 Here is a before-and-after of the algorithm applied to an example image:
 
-![results](https://github.com/yahyarahhawi/Dust-Removal-For-Film-Negative-Scans/assets/170378585/2af3f2a7-ae10-4988-b521-7558f77c7556)
+
+![Results](https://github.com/yahyarahhawi/Dust-Removal-For-Film-Negative-Scans/assets/170378585/0b85b0dd-13d3-43a5-bfee-dfd4432113f7)
 
 
 ## Issues
 
-### False Positives in Dust Detection
+1. **False Positives in Dust Detection:**
 The algorithm may sometimes incorrectly identify non-dust features as dust particles, especially if they have similar intensity and size characteristics. This can lead to undesired alterations in the image.
 
-### Limited Dust Particle Types
+2. **Limited Dust Particle Types:**
 The algorithm is optimized for specific types of dust particles. Unusual shapes or very small dust particles might not be detected or removed effectively.
 
-### Performance on High-Resolution Images
+3. **Performance on High-Resolution Images:**
 Processing very high-resolution images can be computationally intensive and slow, especially with larger window sizes and higher intensities.
 
-### Dependency on Parameter Tuning
+4. **Dependency on Parameter Tuning:**
 The effectiveness of dust removal heavily relies on proper parameter tuning (e.g., intensity, sigma values, threshold). Users may need to experiment with different settings to achieve optimal results, which can be time-consuming.
 
-### Color Images
+5. **Color Images:**
 The current implementation assumes grayscale images. Additional work is required to extend the algorithm to handle color images effectively.
 ## Improvements
 Future improvements include:
